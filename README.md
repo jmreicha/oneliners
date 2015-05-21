@@ -7,6 +7,11 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * `curl http://whatismyip.org/`
  * `curl ifconfig.me`
 
+**Dig**
+
+ * Check domain with specific NS - `dig <domain.com> @<ns-server>`
+ * Get NS records for a site - `dig <domain.com> ns`
+
 **Disk checks**
 
  * Top 50 file sizes - `du -ah / | sort -n -r | head -n 50`
