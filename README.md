@@ -48,7 +48,7 @@ This is a place to store useful command line commands.  Feel free to fork and/or
 **Password generation**
 
  * Create hash from password - `openssl passwd -crypt <password>`
- * Generate random 8 character password - `makepasswd -count 1 -minchars 8`
+ * Generate random 8 character password (Ubuntu) - `makepasswd -count 1 -minchars 8`
  * Create .passwd file with user and random password - `sudo htpasswd -c /etc/nginx/.htpasswd <user>`
 
 **Remove files over 30 days old**
