@@ -7,6 +7,10 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * `curl http://whatismyip.org/`
  * `curl ifconfig.me`
 
+**Return the IP of an interface**
+
+ * `ifconfig en0 | grep --word-regexp inet | awk '{print $2}'`
+
 **Dig**
 
  * Check domain with specific NS - `dig <domain.com> @<ns-server>`
@@ -44,6 +48,16 @@ This is a place to store useful command line commands.  Feel free to fork and/or
 **Iptables**
 
  * Check nat rules for ip redirection - `iptables -nvL -t nat`
+
+**Nginx**
+
+ * Check installed modules - `nginx -V`
+ * Pretty print installed modules - `2>&1 nginx -V | xargs -n1`
+ * Test a configuration without reloading - `nginx -t`
+ * Stop all nginx processes - `nginx -s stop`
+ * Start all nginx processes - `nginx -s start`
+ * Restart all nginx processes - `nginx -s restart`
+ * Realod nginx configuration (without restarting) - `nginx -s reload`
 
 **Password generation**
 
