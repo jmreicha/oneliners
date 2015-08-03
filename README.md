@@ -59,6 +59,12 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * Restart all nginx processes - `nginx -s restart`
  * Realod nginx configuration (without restarting) - `nginx -s reload`
 
+**nmap**
+
+* Check single port on single host - `nmap -p <port> <host/IP>`
+* Intrusive port scan on a single host - `nmap -sS <host/IP>`
+* Top ten port on a single host - `nmap --top-ports 10 <host/IP>`
+
 **Password generation**
 
  * Create hash from password - `openssl passwd -crypt <password>`
