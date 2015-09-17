@@ -10,6 +10,11 @@ This is a place to store useful command line commands.  Feel free to fork and/or
 **Return the IP of an interface**
 
  * `ifconfig en0 | grep --word-regexp inet | awk '{print $2}'`
+ 
+ 
+**Replace all occurrences of string in a directory**
+
+ * Find and replace string - `grep -rl "oldstring" ./ | xargs sed -i "" "s/oldstring/newstring/g"`
 
 **Dig**
 
@@ -43,7 +48,6 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * Look through all files in current dir for word “foo” - `grep -R "foo” .`
  * View last ten lines of output - `grep -i -C 10 "invalid view source” /var/log/info.log`
  * Display line number of message - `grep -n “pattern” <file>`
- * Find and replace string - `grep -rl "somestring" ./ | xargs sed -i "" "s/somestring/newstring/g"`
 
 **Iptables**
 
