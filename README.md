@@ -2,6 +2,11 @@
 
 This is a place to store useful command line commands.  Feel free to fork and/or PR if you have any additions.
 
+**Check which ports are listening**
+
+ * ss -ltn
+ * lsof -ni | grep LISTEN
+
 **Check a public IP**
 
  * `curl http://whatismyip.org/`
@@ -63,7 +68,7 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * Restart all nginx processes - `nginx -s restart`
  * Realod nginx configuration (without restarting) - `nginx -s reload`
 
-**nmap**
+**Nmap**
 
 * Check single port on single host - `nmap -p <port> <host/IP>`
 * Intrusive port scan on a single host - `nmap -sS <host/IP>`
