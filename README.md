@@ -4,8 +4,8 @@ This is a place to store useful command line commands.  Feel free to fork and/or
 
 **Check which ports are listening**
 
- * ss -ltn
- * lsof -ni | grep LISTEN
+ * `ss -ltn`
+ * `lsof -ni | grep LISTEN`
 
 **Check a public IP**
 
