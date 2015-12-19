@@ -42,6 +42,7 @@ This is a place to store useful command line commands.  Feel free to fork and/or
  * Install on Ubuntu - `curl -sSL https://get.docker.com/ubuntu/ | sudo sh`
  * Get stats from all containers on a host - `docker ps -q | xargs docker stats`
  * Tail last 300 lines of logs for a container - `docker logs --tail=300 -f <container_id>`
+ * Remove old (dangling) Docker volumes - `docker volume rm $(docker volume ls -qf dangling=true)`
 
 **Git**
 
