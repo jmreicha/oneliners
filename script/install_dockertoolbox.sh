@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# This is a helper script for installing the Docker toolbox
+
+echo_info () {
+  printf "\033[1;34m[INFO] \033[0m$1"
+}
+
 _setup_toolbox() {
     if ! which "brew" > /dev/null; then
         echo_info "Please install brew first!\n"
