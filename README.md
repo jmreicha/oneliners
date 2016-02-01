@@ -2,6 +2,8 @@
 
 This is a place to store useful command line commands.  Feel free to fork and/or PR if you have any additions.
 
+Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/script) directory for more examples.
+
 **Check which ports are listening**
 
  * `ss -ltn`
