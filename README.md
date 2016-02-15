@@ -35,6 +35,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
  * Check disk usage per directory - `du -h <dir> | grep '[0-9\.]\+G’`
  * Look for growing directories - `watch -n 10 df -ah`
  * Ncurses based disk usage - `ncdu -q`
+ * Colorized output of du - `du -x --max-depth=1|sort -rn|awk -F / -v c=$COLUMNS 'NR==1{t=$1} NR>1{r=int($1/t*c+.5); b="\033[1;31m"; for (i=0; i<r; i++) b=b"#"; printf " %5.2f%% %s\033[0m %s\n", $1/t*100, b, $2}'|tac`
 
 **Docker**
 
