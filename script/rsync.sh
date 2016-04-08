@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Helper script for syncing files and directories programatically.
+# Helper script for syncing files and directories programatically to docker-machien VM.
 
 # Set Strict Mode
 set -eou pipefail
