@@ -53,6 +53,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
  * Remove deleted files from repo - `git rm $(git ls-files --deleted)`
  * Reset git repo (dangerous) - `git reset --hard HEAD`
  * Reset and remove untracked changes in repo - `git clean -xdf`
+ * Ignore certificates when cloning via HTTPS - `git config --global http.sslVerify false`
 
 **Grep**
 
