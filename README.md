@@ -108,3 +108,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 
  * Kill stuck tmux window - `tmux kill-window -t X`
 
+**vim**
+
+ * Change/update contents of a line - `Vc`
+ * Select text inside quotes - `vi"`
