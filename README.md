@@ -88,10 +88,11 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
  * Generate random 8 character password (Ubuntu) - `makepasswd -count 1 -minchars 8`
  * Create .passwd file with user and random password - `sudo htpasswd -c /etc/nginx/.htpasswd <user>`
 
-**Remove files over 30 days old**
+**Removing files**
 
- * `find . -mtime +30 | xargs rm -rf`
-
+ * Remove files over 30 days old - `find . -mtime +30 | xargs rm -rf`
+ * Remove files older than 7 day starting with 'backup' - `find . -type f -name "backup*" -mtime +7 -exec rm {} \;`
+ 
 **SS (socket info)**
 
  * Check ports that are listening - `ss -ltn`
