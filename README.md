@@ -4,10 +4,13 @@ This is a place to store useful command line commands.  Feel free to fork and/or
 
 Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/script) directory for more examples.
 
-**Check which ports are listening**
+**Checking ports**
 
- * `ss -ltn`
- * `lsof -ni | grep LISTEN`
+ * Show port and PID - `netstat -tulpn`
+ * Another way to show port and PID - `ss -ltn`
+ * Show real time TCP and UDP ports - `ss -stplu`
+ * Show all established connections `lsof -i`
+ * Show listening connections - `lsof -ni | grep LISTEN``
 
 **Check a public IP**
 
