@@ -10,7 +10,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
  * Another way to show port and PID - `ss -ltn`
  * Show real time TCP and UDP ports - `ss -stplu`
  * Show all established connections `lsof -i`
- * Show listening connections - `lsof -ni | grep LISTEN``
+ * Show listening connections - `lsof -ni | grep LISTEN`
 
 **Check a public IP**
 
