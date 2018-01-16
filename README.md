@@ -16,6 +16,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 
  * `curl http://whatismyip.org/`
  * `curl ifconfig.me`
+ * `curl icanhazip.com`
 
 **Return the IP of an interface**
 
