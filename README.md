@@ -7,7 +7,8 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 **Checking ports**
 
  * Show port and PID - `netstat -tulpn`
- * Another way to show port and PID - `ss -ltn`
+ * Show process and listening port - `ss -ltp`
+ * Show ports that are listening - `ss -ltn`
  * Show real time TCP and UDP ports - `ss -stplu`
  * Show all established connections `lsof -i`
  * Show listening connections - `lsof -ni | grep LISTEN`
@@ -96,11 +97,6 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 
  * Remove files over 30 days old - `find . -mtime +30 | xargs rm -rf`
  * Remove files older than 7 day starting with 'backup' - `find . -type f -name "backup*" -mtime +7 -exec rm {} \;`
- 
-**SS (socket info)**
-
- * Check ports that are listening - `ss -ltn`
- * Print process and listening port - `ss -ltp`
 
 **SSH**
 
