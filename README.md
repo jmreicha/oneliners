@@ -114,3 +114,7 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 
  * Change/update contents of a line - `Vc`
  * Select text inside quotes - `vi"`
+ 
+ **ps**
+ 
+ * Show process tree of all PIDs - `ps auxwf`
