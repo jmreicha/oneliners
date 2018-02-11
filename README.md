@@ -1,8 +1,6 @@
 # one-liners
 
-This is a place to store useful command line commands.  Feel free to fork and/or PR if you have any additions.
-
-Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/script) directory for more examples.
+This is my cheat sheet for useful command line commands.  Feel free to fork and/or PR if you have any additions.
 
 **Checking ports**
 
@@ -108,13 +106,11 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
 
 **Tmux**
 
+ * Kill a window - `tmux kill-window -t 0`
  * Kill stuck tmux window - `tmux kill-window -t X`
+ * Create a new session <name> - `tmux new -s <name>`
+ * List all sessions - `tmux ls`
 
-**vim**
-
- * Change/update contents of a line - `Vc`
- * Select text inside quotes - `vi"`
- 
  **ps**
  
  * Show process tree of all PIDs - `ps auxwf`
