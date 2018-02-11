@@ -118,3 +118,8 @@ Please check out the [script](https://github.com/jmreicha/oneliners/tree/master/
  **ps**
  
  * Show process tree of all PIDs - `ps auxwf`
+ * Show all process info and hierarchy (same as above)- `ps -efH`
+ * Show orphaned processes for <use> - `ps -ef|awk '$3=="1" && /pandora/ { print $2 }'`
+ * Show all orphaned processes (could be daemons) - `ps -elf | awk '{if ($5 == 1){print $4" "$5" "$15}}'`
+ * Show zombie processes - `ps aux | grep Z`
+ 
