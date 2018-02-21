@@ -58,7 +58,9 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
  * Reset and remove untracked changes in repo - `git clean -xdf`
  * Ignore certificates when cloning via HTTPS - `git config --global http.sslVerify false`
  * Pull changes and remove stale branches - `git pull --prune`
- * Grab the diff of a previous version of a file - `git diff HEAD@{1} ../../production.hosts
+ * Grab the diff of a previous version of a file - `git diff HEAD@{1} ../../production.hosts`
+ * Grab the diff of a staged change - `git diff --cached <file>`
+ * Undo a commit to a branch - `git reset --soft HEAD~1`
 
 **Grep**
 
