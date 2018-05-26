@@ -21,7 +21,8 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
 
  * `ifconfig en0 | grep --word-regexp inet | awk '{print $2}'`
  * `ip add show eth0 | awk '/inet/ {print $2}' | cut -d/ -f1 | head -1`
- 
+ * `ip -br a sh eth0 | awk '{ print $3 }'` (returns netmask)
+ * `ip route show dev eth0 | awk '{print $7}'
  
 **Replace all occurrences of string in a directory**
 
