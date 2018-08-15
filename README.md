@@ -52,6 +52,10 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
  * Tail last 300 lines of logs for a container - `docker logs --tail=300 -f <container_id>`
  * Remove old (dangling) Docker volumes - `docker volume rm $(docker volume ls -qf dangling=true)`
 
+**Find**
+
+ * Exlcude directories in find - `find /tmp -not \( -path /tmp/dir -prune \) -type p -o -type b`
+
 **Git**
 
  * Remove deleted files from repo - `git rm $(git ls-files --deleted)`
