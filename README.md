@@ -23,6 +23,7 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
  * `ip add show eth0 | awk '/inet/ {print $2}' | cut -d/ -f1 | head -1`
  * `ip -br a sh eth0 | awk '{ print $3 }'` (returns netmask)
  * `ip route show dev eth0 | awk '{print $7}'
+ * `hostname -I` (return ip only)
  
 **Replace all occurrences of string in a directory**
 
