@@ -36,6 +36,7 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
 
 **Disk checks**
 
+ * Check the size of a top level dicectory - `du -h --max-depth=1 /tmp/`
  * Top 50 file sizes - `du -ah / | sort -n -r | head -n 50`
  * Show directory sizes (must not be in root directory) - `du -sh  *`
  * Check disk usage per directory - `du -h <dir> | grep '[0-9\.]\+G’`
