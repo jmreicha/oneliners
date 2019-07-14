@@ -69,6 +69,9 @@ This is my cheat sheet for useful command line commands.  Feel free to fork and/
  * Grab the diff of a previous version of a file - `git diff HEAD@{1} ../../production.hosts`
  * Grab the diff of a staged change - `git diff --cached <file>`
  * Undo a commit to a branch - `git reset --soft HEAD~1`
+ * View files changed in a commit - ` git log --stat`
+ * Pull latest changes stashing changes first - `git pull --autostash`
+ * Make an empty commit (good for CI) - `git commit --allow-empty -m "Trigger notification"`
 
 **Grep**
 
